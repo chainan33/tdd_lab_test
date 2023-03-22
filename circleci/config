@@ -52,7 +52,7 @@ jobs:
           command: aws s3 cp function.zip s3://chainan/function.zip
       - run:
           name: Deploy new Lambda
-          command: aws lambda update-function-code --function-name function1 --s3-bucket chainan --s3-key function.zip
+          command: aws lambda update-function-code --function-name function2 --s3-bucket chainan --s3-key function.zip
 
 workflows:
   build-test-and-deploy:
